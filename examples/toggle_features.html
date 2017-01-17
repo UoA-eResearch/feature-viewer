@@ -189,7 +189,7 @@
           fv.onFeatureSelected(function (d) {
               $("#myModalLabel").text(d.detail.description || "Feature");
               console.log(d.detail);
-              var segment = sequence.substring(d.detail.start, d.detail.end);
+              var segment = sequence.substring(d.detail.start - 1, d.detail.end);
               $("#myModalBody").text(segment);
               $("#modalButton").show();
           });
